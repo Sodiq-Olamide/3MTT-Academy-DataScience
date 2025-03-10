@@ -29,3 +29,20 @@ If the answer is incorrect, the correct answer is printed.
 Final Score:
 
 After the loop finishes, the total score is displayed using print("You scored", score_count, "out of", len(cs_quiz), "questions."). score_count is the number of correct answers, and len(cs_quiz) gives the total number of questions in the quiz.
+
+
+TK UI Version:
+Explanation:
+Tkinter Setup: We start by creating a QuizApp class to manage the UI. The window (root) contains labels for displaying questions, radio buttons for answers, and a submit button to check the selected answer.
+
+Widgets:
+
+question_label displays the current question.
+option1, option2, option3, option4 are Radiobutton widgets to display the possible answers.
+The submit_button calls the check_answer method to evaluate the selected answer.
+Logic:
+
+The load_question method loads the question and options.
+check_answer checks the selected answer against the correct one and moves to the next question.
+After all questions are answered, show_results displays the final score in a message box.
+Flow: The user will be able to click on the options for each question and submit their answer. The app will show their score after completing all the questions.
